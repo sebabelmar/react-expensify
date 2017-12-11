@@ -10,6 +10,33 @@ let features = [
     'subfeatures': []
   },
   {
+    'title': 'Hike trail',
+    'presence': true,
+    'subfeatures': [
+      {
+        'title': 'Kids',
+        'presence': true,
+        'subfeatures': [
+          {
+            'title': 'Duck Pond',
+            'presence': true,
+            'subfeatures': []
+          },
+          {
+            'title': 'Bike routes',
+            'presence': true,
+            'subfeatures': []
+          }
+        ]
+      },
+      {
+        'title': 'Adults',
+        'presence': true,
+        'subfeatures': []
+      }
+    ]
+  },
+  {
     'title': 'Shower',
     'presence': false,
     'subfeatures': [
@@ -40,6 +67,11 @@ let features = [
         'subfeatures': [
           {
             'title': 'Pack in, pack out',
+            'presence': true,
+            'subfeatures': []
+          },
+          {
+            'title': 'Done',
             'presence': true,
             'subfeatures': []
           }
