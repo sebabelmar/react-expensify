@@ -28,7 +28,7 @@ This example could have been written without the use of those tools but it could
 
 * Using campground.html as index.html
 * Using Webpack + Babel:
-  * JSX as React production code in order to do not have to write DOM elemnts like this:
+  * JSX as React production code in order to do not have to write DOM elements like this:
     ```javascript
       React.createElement('div', null,
         React.createElement('h1', null, 'Camp Features'),
@@ -36,16 +36,3 @@ This example could have been written without the use of those tools but it could
       )
     ```
   * SASS code converted to CSS
-
-## TODO:
-- get Webpack Dev Server to render campground.html as index.html
-- make src/app.js the entry file for webpack to create bundle
-  - require React
-  - require ReactDOM
-  - render simple component
-- get Webpack to create bundle to be use by index.html
-- make React and ReactDOM available to
-- render first component using ES6 +
-
-- Add redux
-- Add test suite
