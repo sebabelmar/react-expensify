@@ -1,9 +1,5 @@
-import features from './utils/camp_features';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ListWidget from './components/ListWidget'
 
-
-const template = React.createElement('div', {className: 'features'}, "Hello World!")
-console.log(features)
-
-ReactDOM.render(template, document.getElementById('app'));
+ReactDOM.render(<ListWidget />, document.getElementById('app'));
