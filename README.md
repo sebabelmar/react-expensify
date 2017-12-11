@@ -41,6 +41,17 @@ Features are objet that comply with the following types contract:
   }
 ```
 
+## Run
+#### Install dependencies  
+`$ npm install`  
+
+#### Serve  
+`$ npm run dev-server`  
+
+#### Change input  
+Navigate to `src/utils/camp_features.js` and modify the file following the contract.
+
+
 ## Notes:
 In order to use JSX to write React code and to better integrate SASS I decided to use NPM, Babel and Webpack.   
 
@@ -62,4 +73,4 @@ This example could have been written without the use of those tools but it could
 
 ## More
 
-I had a great time working on this exercise 
+I had a great time working on this exercise and it was really exiting thinking about working for the Hipcamp team!
