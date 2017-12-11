@@ -28,11 +28,11 @@ Clear, concise, "production-ready" code will be appreciated.
 ### When multi level featuers present
 ![multiple levels](docs/features-multiple.png)
 
-This project presents as deliverable a React ListWidget component that given an array of features renders a configurable first level of items and consequent level of clickble children. This widget is mounted in hypothetical environment call HipcampContainer.
+This project presents as a deliverable a React ListWidget component that given an array of features renders a configurable first level of items and consequent level of clickble children. This widget is mounted in a hypothetical environment call HipcampContainer.
 
 ListWidget component requires an array of features.  
 
-Features are objet that comply with the following types contract:
+Features are objects that comply with the following type's contract:
 ```
   feature = {
    title: <string>,
@@ -55,10 +55,10 @@ Navigate to `src/utils/camp_features.js` and modify the file following the contr
 ## Notes:
 In order to use JSX to write React code and to better integrate SASS I decided to use NPM, Babel and Webpack.   
 
-This example could have been written without the use of those tools but it could have require me to use the SASS CLI and to write React code in a way that can be considerer not "production-ready".  
+This example could have been written without the use of those tools but it could have required me to use the SASS CLI and to write React code in a way that can be considered not "production-ready".  
 
 * Using campground.html as index.html
-* Consuming `camp_features.js` from `src/utils/camp_features.js`
+* Consuming `camp_features.js` from `src/utils/camp_features.js` via `src/api.js` to mock an API
 * Using Webpack + Babel:
   * JSX as React production code in order to do not have to write DOM elements like this:
     ```javascript
@@ -76,3 +76,8 @@ Includes type validations and handling edge cases.
 ## More
 
 I had a great time working on this exercise and it was really exiting thinking about working for the Hipcamp team!
+
+## TODO:
+* Handle feature.presence not boolean or not present with question mark icon
+* Code review
+* Test
