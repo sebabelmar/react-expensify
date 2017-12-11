@@ -1,11 +1,27 @@
 import React from 'react';
 import UnorderedList from './UnorderedList'
 
-export default class ListItem extends React.Component{
+/**
+ * Renders list items and nested unordered list when feature.subfeatures.lenght > 0
+ *
+ * Dependencies :
+ *  Component:
+ *    UnorderedList
+ *  Props:
+ *    feature = {
+ *     title: <string>,
+ *     presence: <boolean>,
+ *     subfeatures: <feature[]>
+ *   }
+ */
+
+export default class ListItem extends React.Component {
   state = {
     clicked: false,
     subfeatures: []
   }
+
+  /** Manages clicked and subfeatures state for children UL rendering **/
   handleAddUL = (e) => {
     e.stopPropagation();
 

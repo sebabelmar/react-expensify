@@ -1,6 +1,16 @@
 import React from 'react';
 import ListItem from './ListItem';
 
+/**
+ * Reders unodered list of items and nest unorder list when possible
+ *
+ * Dependencies :
+ *  Component:
+ *    ListItem
+ *  Props:
+ *    featuresArray <feature[]>
+ */
+
 const UnorderedList = (props) => {
   {
     let listItems =  props.featuresArray.map((feature) => (

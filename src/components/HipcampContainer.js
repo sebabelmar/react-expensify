@@ -2,6 +2,27 @@ import React from 'react';
 import campsApi from '../api';
 import ListWidget from './ListWidget';
 import Header from './Header';
+
+/**
+ * Represents the environmet where the ListWidget would be use and the API for
+ * features would be made.
+ *
+ * Dependencies :
+ *  Api:
+ *   campsApi
+ *     getFeatures() contract:
+ *       returns feature[]
+ *       feature = {
+ *         title: <string>,
+ *         presence: <boolean>,
+ *         subfeatures: <feature[]>
+ *       }
+ *  Component:
+ *    ListWidget
+ *  State:
+ *    featuresArray <feature[]>
+ */
+
 export default class HipcampContainer extends React.Component{
 
   state = {

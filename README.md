@@ -20,6 +20,26 @@ DOM when the page is reloaded.
 
 Clear, concise, "production-ready" code will be appreciated.
 
+## Result
+
+### When no features to render
+![empty array](docs/features-empty.png)
+
+### When multi level featuers present
+![multiple levels](docs/features-multiple.png)
+
+This project presents as deliverable a React ListWidget component that given an array of features renders a configurable first level of items and consequent level of clickble children. This widget is mounted in hypothetical environment call HipcampContainer.
+
+ListWidget component requires an array of features.  
+
+Features are objet that comply with the following types contract:
+```
+  feature = {
+   title: <string>,
+   presence: <boolean>,
+   subfeatures: <feature[]>
+  }
+```
 
 ## Notes:
 In order to use JSX to write React code and to better integrate SASS I decided to use NPM, Babel and Webpack.   
@@ -27,12 +47,19 @@ In order to use JSX to write React code and to better integrate SASS I decided t
 This example could have been written without the use of those tools but it could have require me to use the SASS CLI and to write React code in a way that can be considerer not "production-ready".  
 
 * Using campground.html as index.html
+* Consuming `camp_features.js` from `src/utils/camp_features.js`
 * Using Webpack + Babel:
   * JSX as React production code in order to do not have to write DOM elements like this:
     ```javascript
       React.createElement('div', null,
         React.createElement('h1', null, 'Camp Features'),
-        React.createElement('DynamicList', { features : [{},{}]] }),
+        React.createElement('ListWidget', { features : [{},{}]] }),
       )
     ```
   * SASS code converted to CSS
+  * To transform class properties into ES5
+* Webpack loads files, url assets and fonts
+
+## More
+
+I had a great time working on this exercise 

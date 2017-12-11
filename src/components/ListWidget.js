@@ -1,6 +1,16 @@
 import React from 'react';
 import UnorderedList from './UnorderedList'
 
+/**
+ * Reders first level of list items using UnorderedList component
+ *
+ * Dependencies :
+ *  Component:
+ *    UnorderedList
+ *  Props:
+ *    featuresArray <feature[]>
+ */
+
 const ListWidget = (props) => (
   <div className='list-widget--first-level'>
     {
