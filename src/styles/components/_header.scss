@@ -1,0 +1,33 @@
+.header {
+  margin-bottom: $s-size;
+  padding: $m-size;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $hc-light-grey;
+}
+
+.header--logo {
+  max-width: 20rem;
+}
+
+.header--title {
+  color: $hc-dark-grey;
+  margin: $s-size 0 0 0;
+}
+
+@media (min-width: $desktop-breakpoint){
+  .header {
+    margin-bottom: $m-size;
+    flex-direction: row;
+  }
+
+  .header--title {
+    margin: 0 0 0 1rem;
+    padding-top: .7rem;
+  }
+
+  .header--logo {
+    max-height: 2.5rem;
+  }
+}

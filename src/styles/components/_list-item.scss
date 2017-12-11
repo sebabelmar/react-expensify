@@ -1,0 +1,15 @@
+.list-item--icon {
+  margin-right: 1rem;
+}
+
+.list-item--icon__positive {
+    color: $hc-green;
+}
+
+.list-item--icon__negative {
+    color: $hc-red;
+}
+
+.list-item--item__clicklable {
+  cursor: pointer;
+}
