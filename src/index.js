@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ListWidget from './components/ListWidget'
+import HipcampContainer from './components/HipcampContainer'
+import 'font-awesome/css/font-awesome.min.css';
 import 'normalize.css/normalize.css'
 import './styles/style.scss'
 
-ReactDOM.render(<ListWidget />, document.getElementById('app'));
+ReactDOM.render(<HipcampContainer />, document.getElementById('app'));

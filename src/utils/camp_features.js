@@ -28,7 +28,7 @@ let features = [
               },
               {
                 'title': 'Small fishes',
-                'presence': true,
+                'presence': false,
                 'subfeatures': []
               }
             ]
@@ -53,7 +53,7 @@ let features = [
     'subfeatures': [
       {
         'title': 'Outdoor shower',
-        'presence': false,
+        'presence': true,
         'subfeatures': []
       }
     ]
@@ -78,11 +78,6 @@ let features = [
         'subfeatures': [
           {
             'title': 'Pack in, pack out',
-            'presence': true,
-            'subfeatures': []
-          },
-          {
-            'title': 'Done',
             'presence': true,
             'subfeatures': []
           }
