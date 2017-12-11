@@ -13,8 +13,9 @@ const UnorderedList = (props) => {
     return (
       <ul>
         {
-          props.featuresArray.length > 0 && 
-            listItems}
+          props.featuresArray.length > 0 &&
+            listItems
+        }
       </ul>
     )
   }

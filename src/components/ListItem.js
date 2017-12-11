@@ -31,9 +31,7 @@ export default class ListItem extends React.Component{
         {this.props.feature.title}
         {
           this.state.subfeatures.length > 0 &&
-            <UnorderedList
-              featuresArray={this.state.subfeatures}
-            />
+            <UnorderedList featuresArray={this.state.subfeatures}/>
         }
       </li>
     )

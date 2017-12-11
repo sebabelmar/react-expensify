@@ -7,9 +7,7 @@ export default class ListWidget extends React.Component{
       <div className='list-widget--first-level'>
         {
           this.props.featuresArray.length > 0 &&
-            <UnorderedList
-              featuresArray={this.props.featuresArray}
-            />
+            <UnorderedList featuresArray={this.props.featuresArray}/>
         }
       </div>
     );
