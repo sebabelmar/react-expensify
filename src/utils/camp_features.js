@@ -22,12 +22,12 @@ let features = [
             'presence': true,
             'subfeatures': [
               {
-                'title': 'Big fishes',
+                'title': 'Big fish',
                 'presence': true,
                 'subfeatures': []
               },
               {
-                'title': 'Small fishes',
+                'title': 'Small fish',
                 'presence': false,
                 'subfeatures': []
               }
