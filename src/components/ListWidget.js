@@ -5,15 +5,11 @@ import UnorderedList from './UnorderedList'
 export default class ListWidget extends React.Component{
 
   state = {
-    features: [],
+    features: []
   }
-  featureLevel = 1;
   componentDidMount(){
     getFeatures()
       .then((features) => this.setState(() => ({ features })));
-  }
-  handgleToggle = (e, data) => {
-    console.log(e, data)
   }
   render(){
     return (
@@ -22,7 +18,6 @@ export default class ListWidget extends React.Component{
           this.state.features.length > 0 &&
           <UnorderedList
             array={this.state.features}
-            hidden={false}
           />
         }
       </div>
