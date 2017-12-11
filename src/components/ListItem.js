@@ -6,7 +6,7 @@ export default class ListItem extends React.Component{
     clicked: false,
     subfeatures: []
   }
-  handleAddingUL = (e) => {
+  handleAddUL = (e) => {
     e.stopPropagation();
 
     let subfeatures = this.state.clicked ? [] : this.props.feature.subfeatures;
@@ -20,18 +20,20 @@ export default class ListItem extends React.Component{
     return(
       <li
         className={displaySubfeatures ? 'list-item--item__clicklable' : null}
-        onClick={this.handleAddingUL}
+        onClick={this.handleAddUL}
         key={Math.random()}
       >
-        {this.props.feature.presence ?
-          <i className='fa fa-check-circle list-item--icon list-item--icon__positive' aria-hidden='true'></i> :
-          <i className='fa fa-times-circle list-item--icon list-item--icon__negative' aria-hidden='true'></i>
+        {
+          this.props.feature.presence
+           ? <i className='fa fa-check-circle list-item--icon list-item--icon__positive' aria-hidden='true'></i>
+           : <i className='fa fa-times-circle list-item--icon list-item--icon__negative' aria-hidden='true'></i>
         }
         {this.props.feature.title}
-        {this.state.subfeatures.length > 0 &&
-          <UnorderedList
-            array={this.state.subfeatures}
-          />
+        {
+          this.state.subfeatures.length > 0 &&
+            <UnorderedList
+              array={this.state.subfeatures}
+            />
         }
       </li>
     )
