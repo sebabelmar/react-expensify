@@ -71,6 +71,8 @@ This example could have been written without the use of those tools but it could
   * To transform class properties into ES5
 * Webpack loads files, url assets and fonts
 
+Includes type validations and handling edge cases.  
+
 ## More
 
 I had a great time working on this exercise and it was really exiting thinking about working for the Hipcamp team!
