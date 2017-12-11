@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import UnorderedList from './UnorderedList'
 
 /**
@@ -14,10 +15,18 @@ import UnorderedList from './UnorderedList'
 const ListWidget = (props) => (
   <div className='list-widget--first-level'>
     {
-      props.featuresArray.length > 0 &&
+      (props.featuresArray instanceof Array && props.featuresArray.length > 0) &&
         <UnorderedList featuresArray={props.featuresArray}/>
     }
   </div>
 )
+
+ListWidget.propTypes = {
+  featuresArray: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+    presence: PropTypes.bool,
+    subfeatures: PropTypes.array
+  }))
+}
 
 export default ListWidget;

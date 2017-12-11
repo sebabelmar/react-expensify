@@ -38,7 +38,7 @@ export default class HipcampContainer extends React.Component{
         <Header />
         <div className='container'>
           {
-            this.state.features.length > 0
+            this.state.features instanceof Array && this.state.features.length > 0
               ? <ListWidget featuresArray={this.state.features}/>
               : <p className='hipcamp-container--message'> This campsite has no features :(</p>
           }

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import UnorderedList from './UnorderedList'
 
 /**
@@ -30,8 +31,17 @@ export default class ListItem extends React.Component {
     this.setState(()=>({ subfeatures }))
     this.setState((prevState)=>({ clicked: !prevState.clicked }))
   }
+  isPresent = () => {
+    if(typeof this.props.feature.presence === 'boolean') {
+      return this.props.feature.presence
+        ? <i className='fa fa-check-circle list-item--icon list-item--icon__positive' aria-hidden='true'></i>
+        : <i className='fa fa-times-circle list-item--icon list-item--icon__negative' aria-hidden='true'></i>
+    }
+    return;
+  }
   render(){
-    const displaySubfeatures = this.props.feature.subfeatures.length > 0;
+    const displaySubfeatures = this.props.feature.subfeatures instanceof Array &&
+                                this.props.feature.subfeatures.length > 0;
 
     return(
       <li
@@ -40,16 +50,23 @@ export default class ListItem extends React.Component {
         key={Math.random()}
       >
         {
-          this.props.feature.presence
-           ? <i className='fa fa-check-circle list-item--icon list-item--icon__positive' aria-hidden='true'></i>
-           : <i className='fa fa-times-circle list-item--icon list-item--icon__negative' aria-hidden='true'></i>
+          this.isPresent()
         }
-        {this.props.feature.title}
+        { typeof this.props.feature.title === 'string'  &&
+            this.props.feature.title}
         {
-          this.state.subfeatures.length > 0 &&
+          (this.state.subfeatures instanceof Array && this.state.subfeatures.length) > 0 &&
             <UnorderedList featuresArray={this.state.subfeatures}/>
         }
       </li>
     )
   }
 }
+
+ListItem.propTypes = {
+  feature: PropTypes.shape({
+    title: PropTypes.string,
+    presence: PropTypes.bool,
+    subfeatures: PropTypes.array
+  })
+};
