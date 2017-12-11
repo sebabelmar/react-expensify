@@ -20,7 +20,18 @@ let features = [
           {
             'title': 'Duck Pond',
             'presence': true,
-            'subfeatures': []
+            'subfeatures': [
+              {
+                'title': 'Big fishes',
+                'presence': true,
+                'subfeatures': []
+              },
+              {
+                'title': 'Small fishes',
+                'presence': true,
+                'subfeatures': []
+              }
+            ]
           },
           {
             'title': 'Bike routes',
