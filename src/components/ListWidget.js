@@ -1,5 +1,5 @@
 import React from 'react';
-import getFeatures from '../api';
+import campsApi from '../api';
 import UnorderedList from './UnorderedList'
 
 export default class ListWidget extends React.Component{
@@ -8,7 +8,7 @@ export default class ListWidget extends React.Component{
     features: []
   }
   componentDidMount(){
-    getFeatures()
+    campsApi.getFeatures()
       .then((features) => this.setState(() => ({ features })));
   }
   render(){

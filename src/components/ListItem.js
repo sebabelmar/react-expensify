@@ -1,7 +1,6 @@
 import React from 'react';
 import UnorderedList from './UnorderedList'
 
-
 export default class ListItem extends React.Component{
   state = {
     clicked: false,
