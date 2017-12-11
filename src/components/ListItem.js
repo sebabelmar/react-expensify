@@ -32,7 +32,7 @@ export default class ListItem extends React.Component{
         {
           this.state.subfeatures.length > 0 &&
             <UnorderedList
-              array={this.state.subfeatures}
+              featuresArray={this.state.subfeatures}
             />
         }
       </li>
