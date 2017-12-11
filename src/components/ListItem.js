@@ -1,5 +1,5 @@
 import React from 'react';
-import UnorderList from './UnorderList'
+import UnorderedList from './UnorderedList'
 
 
 export default class ListItem extends React.Component{
@@ -12,7 +12,7 @@ export default class ListItem extends React.Component{
         key={Math.random()}
       >
         {this.props.feature.title}
-        <UnorderList
+        <UnorderedList
           array={this.props.feature.subfeatures}
           hidden={false}
         />

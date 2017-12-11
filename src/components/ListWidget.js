@@ -1,6 +1,6 @@
 import React from 'react';
 import getFeatures from '../api';
-import UnorderList from './UnorderList'
+import UnorderedList from './UnorderedList'
 
 export default class ListWidget extends React.Component{
 
@@ -20,7 +20,7 @@ export default class ListWidget extends React.Component{
       <div>
         {
           this.state.features.length > 0 &&
-          <UnorderList
+          <UnorderedList
             array={this.state.features}
             hidden={false}
           />
