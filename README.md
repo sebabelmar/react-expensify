@@ -25,7 +25,7 @@ Clear, concise, "production-ready" code will be appreciated.
 ### When no features to render
 ![empty array](docs/features-empty.png)
 
-### When multi level featuers present
+### When multi level features present
 ![multiple levels](docs/features-multiple.png)
 
 This project presents as a deliverable a React ListWidget component that given an array of features renders a configurable first level of items and consequent level of clickable children. This widget is mounted in a hypothetical environment call HipcampContainer.
