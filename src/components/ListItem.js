@@ -31,15 +31,17 @@ export default class ListItem extends React.Component {
     this.setState(()=>({ subfeatures }))
     this.setState((prevState)=>({ clicked: !prevState.clicked }))
   }
-  isPresent = () => {
+  render(){
+    let presenceIcon;
+
     if(typeof this.props.feature.presence === 'boolean') {
-      return this.props.feature.presence
+       presenceIcon = this.props.feature.presence
         ? <i className='fa fa-check-circle list-item--icon list-item--icon__positive' aria-hidden='true'></i>
         : <i className='fa fa-times-circle list-item--icon list-item--icon__negative' aria-hidden='true'></i>
+    } else {
+      presenceIcon = <i className="fa fa-question-circle list-item--icon" aria-hidden="true"></i>
     }
-    return;
-  }
-  render(){
+
     const displaySubfeatures = this.props.feature.subfeatures instanceof Array &&
                                 this.props.feature.subfeatures.length > 0;
 
@@ -49,9 +51,7 @@ export default class ListItem extends React.Component {
         onClick={this.handleAddUL}
         key={Math.random()}
       >
-        {
-          this.isPresent()
-        }
+        { presenceIcon }
         { typeof this.props.feature.title === 'string'  &&
             this.props.feature.title}
         {
