@@ -28,7 +28,7 @@ Clear, concise, "production-ready" code will be appreciated.
 ### When multi level featuers present
 ![multiple levels](docs/features-multiple.png)
 
-This project presents as a deliverable a React ListWidget component that given an array of features renders a configurable first level of items and consequent level of clickble children. This widget is mounted in a hypothetical environment call HipcampContainer.
+This project presents as a deliverable a React ListWidget component that given an array of features renders a configurable first level of items and consequent level of clickable children. This widget is mounted in a hypothetical environment call HipcampContainer.
 
 ListWidget component requires an array of features.  
 
@@ -49,7 +49,7 @@ Features are objects that comply with the following type's contract:
 `$ npm run dev-server`  
 
 #### Change input  
-Navigate to `src/utils/camp_features.js` and modify the file following the contract.
+Navigate to `src/utils/camp_features.js` and modify the file following the contract. Save file and refresh application.
 
 
 ## Notes:
@@ -78,6 +78,5 @@ Includes type validations and handling edge cases.
 I had a great time working on this exercise and it was really exiting thinking about working for the Hipcamp team!
 
 ## TODO:
-* Handle feature.presence not boolean or not present with question mark icon
 * Code review
 * Test
