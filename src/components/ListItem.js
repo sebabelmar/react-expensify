@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import UnorderedList from './UnorderedList'
 
 /**
- * Renders list items and nested unordered list when feature.subfeatures.lenght > 0
+ * Renders list items and nested UnorderedList when feature.subfeatures.lenght > 0
  *
  * Dependencies :
  *  Component:

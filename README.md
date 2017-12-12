@@ -75,7 +75,7 @@ Includes type validations and handling edge cases.
 
 ## More
 
-I had a great time working on this exercise and it was really exiting thinking about working for the Hipcamp team!
+I had a great time working on this exercise and it was really exciting thinking about working for the Hipcamp team!
 
 ## TODO:
 * Code review

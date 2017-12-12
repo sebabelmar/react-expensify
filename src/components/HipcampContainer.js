@@ -4,7 +4,7 @@ import ListWidget from './ListWidget';
 import Header from './Header';
 
 /**
- * Represents the environmet where the ListWidget would be use and the API for
+ * Represents the environmet where the ListWidget would be use and the API call for
  * features would be made.
  *
  * Dependencies :

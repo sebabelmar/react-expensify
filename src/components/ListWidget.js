@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import UnorderedList from './UnorderedList'
 
 /**
- * Reders first level of list items using UnorderedList component
+ * Renders first level of list items using UnorderedList component
  *
  * Dependencies :
  *  Component:

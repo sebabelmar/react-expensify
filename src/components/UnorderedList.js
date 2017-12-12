@@ -2,7 +2,7 @@ import React from 'react';
 import ListItem from './ListItem';
 
 /**
- * Reders unodered list of items and nest unorder list when possible
+ * Renders unodered list of items using ListItem component
  *
  * Dependencies :
  *  Component:
