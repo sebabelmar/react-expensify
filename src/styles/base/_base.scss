@@ -5,10 +5,13 @@ html {
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: $m-size;
-  color: $hc-light-grey;
 }
 
 li {
   list-style: none;
   line-height: $l-size;
+}
+
+.is-active {
+  font-weight: bold;
 }
