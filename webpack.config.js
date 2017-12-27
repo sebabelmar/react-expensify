@@ -2,7 +2,9 @@
 
 module.exports = {
   // entry: './src/index.js',
-  entry: './src/playground/redux-101.js',
+  // entry: './src/playground/redux-101.js',
+  entry: './src/playground/redux-expensify.js',
+  // entry: './src/playground/destructive.js',
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js'
