@@ -35,12 +35,12 @@
 //
 
 
-const location = ['30 tourmaline tr', 'sedona', 'AZ']
+const location = ['30 tourmaline tr', 'sedona', 'AZ'];
 
-const [,,state, zip = '12345'] = location;
-console.log(`${state} @ ${zip}`)
+const [,, state, zip = '12345'] = location;
+console.log(`${state} @ ${zip}`);
 
-const coffee = ['Latte', 1.50, 2.00, 2.5]
+const coffee = ['Latte', 1.50, 2.00, 2.5];
 
 const [drink, s, m, l] = coffee;
-console.log(`the Large ${drink} is $${l}`)
+console.log(`the Large ${drink} is $${l}. Others... ${s} ${m}`);
