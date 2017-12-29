@@ -188,18 +188,18 @@ store.dispatch(setEndDate(1500));
 
 // const demoState = {
 //   expenses: [
-//     {
-//       id: '243ffsdfs',
-//       description: 'Paxs school',
-//       note: 'One more month of knowlagde',
-//       amount: '50000',
-//       createdAt: 0
-//     }
+    // {
+    //   id: '243ffsdfs',
+    //   description: 'Paxs school',
+    //   note: 'One more month of knowlagde',
+    //   amount: '50000',
+    //   createdAt: 0
+    // }
 //   ],
-//   filters: {
-//     text: 'rent',
-//     sortBy:   'amount', // amount || date
-//     startDate: undefined,
-//     endDate: undefined
-//   }
+  // filters: {
+  //   text: 'rent',
+  //   sortBy:   'amount', // amount || date
+  //   startDate: undefined,
+  //   endDate: undefined
+  // }
 // };
