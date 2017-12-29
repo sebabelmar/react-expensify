@@ -48,5 +48,4 @@ filters = {
   startDate: <unix>,
   endDate: <unix>
   }
-
 ```
