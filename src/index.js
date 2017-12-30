@@ -30,10 +30,6 @@ store.dispatch(addExpense({
 // setTextFilter - bill -> water
 store.dispatch(setTextFilter('water'));
 
-// setTimeout(()=>{
-//   store.dispatch(setTextFilter('gas'));
-// }, 3000);
-
 // getvisibilityItems
 const state = store.getState();
 console.log(getvisibilityItems(state.expenses, state.filters));
