@@ -8,7 +8,7 @@ const ExpensesList = (props) => (
     <h1>Expenses List</h1>
     {
       props.expenses.map((expense) =>
-        (<ExpenseListItem {...expense } key={expense.id}/>))
+        (<ExpenseListItem {...expense} key={expense.id}/>))
     }
   </div>
 );
