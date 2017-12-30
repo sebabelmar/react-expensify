@@ -1,9 +1,10 @@
 import React from 'react';
+import ExpenseForm from './ExpenseForm';
 
-const EditExpensePage = (props) => {
+const EditExpensePage = () => {
   return (
     <div>
-      This is the edit expense {props.match.params.id}
+      <ExpenseForm />
     </div>
   );
 };

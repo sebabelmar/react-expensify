@@ -20,19 +20,17 @@ store.dispatch(addExpense({
   createdAt: 1000
 }));
 
-// addExpense
 store.dispatch(addExpense({
   description: 'gas bill',
   amount: 30,
-  createdAt: 1000
+  createdAt: 500
 }));
 
-// setTextFilter - bill -> water
-store.dispatch(setTextFilter('water'));
-
-// getvisibilityItems
-const state = store.getState();
-console.log(getvisibilityItems(state.expenses, state.filters));
+store.dispatch(addExpense({
+  description: 'fuel bill',
+  amount: 10,
+  createdAt: 250
+}));
 
 // REDUX examples....
 
