@@ -9,6 +9,8 @@ import getvisibilityItems from './selectors/expenses';
 import 'normalize.css/normalize.css';
 import './styles/style.scss';
 
+
+// REDUX examples....
 const store = configureStore();
 
 // addExpense
@@ -28,13 +30,15 @@ store.dispatch(addExpense({
 // setTextFilter - bill -> water
 store.dispatch(setTextFilter('water'));
 
-setTimeout(()=>{
-  store.dispatch(setTextFilter('gas'));
-}, 3000);
+// setTimeout(()=>{
+//   store.dispatch(setTextFilter('gas'));
+// }, 3000);
 
 // getvisibilityItems
 const state = store.getState();
 console.log(getvisibilityItems(state.expenses, state.filters));
+
+// REDUX examples....
 
 const jsx = (
   <Provider store={store} >
