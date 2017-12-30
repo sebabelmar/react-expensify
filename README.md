@@ -1,4 +1,4 @@
-## Purpose
+  ## Purpose
 Sample app to transition from Flux into Redux
 
 * Use redux and learn:
