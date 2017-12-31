@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "dev-server": "webpack-dev-server",
-    "test": "mocha"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
     "file-loader": "^1.1.5",
     "font-awesome": "^4.7.0",
     "font-loader": "^0.1.2",
+    "jest": "^22.0.4",
     "moment": "^2.20.1",
     "node-sass": "^4.7.2",
     "normalize.css": "^7.0.0",
