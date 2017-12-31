@@ -9,7 +9,6 @@ export default class ExpenseForm extends React.Component {
     super(props);
 
     this.state = {
-      id: props.expense ? props.expense.id : undefined,
       description: props.expense ? props.expense.description : '',
       note: props.expense ? props.expense.note : '',
       amount: props.expense ? (props.expense.amount / 100).toString() : '',
@@ -50,7 +49,6 @@ export default class ExpenseForm extends React.Component {
     } else {
       this.setState(() => ({ error: '' }));
       const expense = {
-        id: this.state.id,
         amount: parseFloat(this.state.amount, 10) * 100,
         description: this.state.description,
         note: this.state.note,
