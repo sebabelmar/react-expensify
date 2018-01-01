@@ -9,19 +9,21 @@ test('should set expenses state to default values', () => {
 });
 
 test('should add expense', () => {
+  const expense = {
+    id: '4',
+    description: 'Car',
+    amount: 45000,
+    note: '',
+    createdAt: moment()
+  };
+
   const action = {
     type: 'ADD_EXPENSE',
-    expense: {
-      id: '4',
-      description: 'Car',
-      amount: 45000,
-      note: '',
-      createdAt: moment()
-    }
+    expense
   };
   const state = expensesReducer(expenses, action);
 
-  expect(state).toEqual(expenses.concat(action.expense));
+  expect(state).toEqual([...expenses, expense]);
 });
 
 test('shoud remove expense by id', () => {
