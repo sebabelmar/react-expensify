@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import ExpenseDashboardPage from '../components/ExpenseDashboardPage';
+import ExpensesDashboardPage from '../components/ExpensesDashboardPage';
 import ExpenseCreatePage from '../components/ExpenseCreatePage';
 import ExpenseEditPage from '../components/ExpenseEditPage';
 import Header from '../components/Header';
@@ -12,7 +12,7 @@ const AppRouter = () => (
     <div>
       <Header/>
       <Switch>
-        <Route path="/" component={ ExpenseDashboardPage } exact/>
+        <Route path="/" component={ ExpensesDashboardPage } exact/>
         <Route path="/create" component={ ExpenseCreatePage } />
         <Route path="/edit/:id" component={ ExpenseEditPage } />
         <Route path="/help" component={ HelpPage } />
