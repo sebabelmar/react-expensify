@@ -6,7 +6,8 @@ import configureStore from './store/configureStore';
 import { addExpense } from './actions/expenses';
 import 'normalize.css/normalize.css';
 import './styles/style.scss';
-
+import 'react-dates/initialize';
+import 'react-dates/lib/css/_datepicker.css';
 
 // REDUX examples....
 const store = configureStore();
