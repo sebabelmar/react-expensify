@@ -2,8 +2,13 @@
 Sample app to transition from Flux into Redux
 
 ### TODO
+- Prep Webpack for production
+- Deploy to Heroku
+- Use Firebase as backend (Authentication)
+- Style
 - Fix finding SingleDatePicker on test
 
+### Objectives
 * Use redux and learn:
   * Store
   * Action generators
@@ -12,13 +17,24 @@ Sample app to transition from Flux into Redux
   * connect
   * Spread objects
 
-### Dependencies
-* redux
-* react redux
-* react router
+* Test
+  * jest
+  * enzyme
+  * __mocks__
+  * spies
 
-### Objectives
-Create an app that tracks expenses following course that can:
+* Deploy
+  * Webpack
+  * Heroku
+
+* Dependencies
+  * redux
+  * react redux
+  * react router
+  * jest
+  * enzyme
+
+### Features
 * Expenses
   * List
   * Create
