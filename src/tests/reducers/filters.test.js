@@ -62,7 +62,7 @@ test('should set filteres state to sort by amount', () => {
 });
 
 test('should set filteres state with custom start date', () => {
-  const dateNow = moment.now();
+  const dateNow = moment();
 
   const action = {
     type: 'SET_START_DATE',
@@ -80,7 +80,7 @@ test('should set filteres state with custom start date', () => {
 });
 
 test('should set filteres state with custom end date', () => {
-  const dateNow = moment.now();
+  const dateNow = moment();
 
   const action = {
     type: 'SET_END_DATE',
