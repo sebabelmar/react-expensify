@@ -1,6 +1,12 @@
 ## Purpose
 Sample app to transition from Flux into Redux
 
+### DONE
+- Redux infrastructure
+- Basic crud functionality - validations
+- Testes using jest and enzyme
+- Dynamic routing
+
 ### TODO
 - Prep Webpack for production
 - Deploy to Heroku
