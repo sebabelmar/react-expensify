@@ -1,5 +1,8 @@
-  ## Purpose
+## Purpose
 Sample app to transition from Flux into Redux
+
+### TODO
+- Fix finding SingleDatePicker on test
 
 * Use redux and learn:
   * Store
