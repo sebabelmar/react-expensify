@@ -10,7 +10,6 @@ test('should render ExpenseForm correctly', () => {
   expect(wrapper).toMatchSnapshot();
 });
 
-
 test('should render ExpenseForm with expense data', () => {
   const wrapper = shallow(<ExpenseForm expense={expenses[0]} />);
 
@@ -69,7 +68,6 @@ test('should not set amount if invalid input', () => {
 
   expect(wrapper.state('amount')).toBe('');
 });
-
 
 test('should call onSubmit prop for valid from submition', () => {
   const onSubmitSpy = jest.fn();
