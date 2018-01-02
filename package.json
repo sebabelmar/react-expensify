@@ -4,6 +4,8 @@
   "description": "boilerplate",
   "main": "index.js",
   "scripts": {
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env=production",
     "build": "webpack",
     "dev-server": "webpack-dev-server",
     "test": "jest --config=jest.config.json"
