@@ -5,10 +5,10 @@ Currently not styled
 ### DONE
 - Redux infrastructure
 - Basic crud functionality - validations
-- Testes using jest and enzyme
+- Tested using jest and enzyme
 - Dynamic routing
 - Webpack for production
-- Deploy to Heroku
+- Deployed to [Heroku](https://react-expensify-seba.herokuapp.com/)
 
 ### TODO
 - Separate dependencies for dev and prod
