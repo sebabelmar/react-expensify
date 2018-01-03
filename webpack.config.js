@@ -8,7 +8,7 @@ module.exports = (env) => {
   return {
     entry: './src/index.js',
     output: {
-      path: path.join(__dirname, 'public'),
+      path: path.join(__dirname, 'public', 'dist'),
       filename: 'bundle.js',
     },
     module: {
@@ -50,13 +50,13 @@ module.exports = (env) => {
         },
         {
           test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-          loader: 'url-loader?limit=10000&mimetype=application/font-woff',
+          loader: 'url-loader?limit=10000&mimetype=application/font-woff'
         },
         {
           test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-          loader: 'file-loader',
-        },
-      ],
+          loader: 'file-loader'
+        }
+      ]
     },
     plugins: [
       CSSExtract
@@ -64,6 +64,7 @@ module.exports = (env) => {
     devServer: {
       contentBase: path.join(__dirname, 'public'),
       historyApiFallback: true,
+      publicPath: '/dist/'
     },
     devtool: isProduction ? 'source-map' : 'inline-source-map'
   };
