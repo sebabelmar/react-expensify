@@ -12,7 +12,7 @@ export default (state = expensesDefaultState, action) => {
       if (expense.id === action.id) {
         return {
           ...expense,
-          ...action.expense,
+          ...action.updates,
         };
       }
       return expense;

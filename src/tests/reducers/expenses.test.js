@@ -51,7 +51,7 @@ test('shoud edit expense by id', () => {
   const action = {
     type: 'EDIT_EXPENSE',
     id: id,
-    expense: {
+    updates: {
       description: 'Edited',
       amount: 1000,
       note: 'Edited note'
@@ -60,6 +60,6 @@ test('shoud edit expense by id', () => {
   const state = expensesReducer(expenses, action);
   const editedExpense = state.find( (e) => e.id === id);
 
-  expect(editedExpense.description).toEqual(action.expense.description);
-  expect(editedExpense.note).toEqual(action.expense.note);
+  expect(editedExpense.description).toEqual(action.updates.description);
+  expect(editedExpense.note).toEqual(action.updates.note);
 });
