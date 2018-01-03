@@ -1,15 +1,17 @@
 ## Purpose
-Sample app to transition from Flux into Redux
+[Sample app](https://react-expensify-seba.herokuapp.com/) to transition from Flux into Redux
+Currently not styled
 
 ### DONE
 - Redux infrastructure
 - Basic crud functionality - validations
-- Testes using jest and enzyme
+- Tested using jest and enzyme
 - Dynamic routing
+- Webpack for production
+- Deployed to [Heroku](https://react-expensify-seba.herokuapp.com/)
 
 ### TODO
-- Prep Webpack for production
-- Deploy to Heroku
+- Separate dependencies for dev and prod
 - Use Firebase as backend (Authentication)
 - Style
 - Fix finding SingleDatePicker on test
