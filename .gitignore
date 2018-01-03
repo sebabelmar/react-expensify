@@ -3,3 +3,7 @@ node_modules/
 npm-debug.log
 .jshintrc
 .jslintrc
+public/bundle.js
+public/bundle.js.map
+public/style.css
+public/style.css.map
